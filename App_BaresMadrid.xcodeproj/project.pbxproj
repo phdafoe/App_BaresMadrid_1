@@ -8,20 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		8B4A7D1E1E5E23E8002DF3F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A7D1D1E5E23E8002DF3F5 /* AppDelegate.swift */; };
-		8B4A7D201E5E23E8002DF3F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A7D1F1E5E23E8002DF3F5 /* ViewController.swift */; };
+		8B4A7D201E5E23E8002DF3F5 /* BMPosicionActualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A7D1F1E5E23E8002DF3F5 /* BMPosicionActualViewController.swift */; };
 		8B4A7D231E5E23E8002DF3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4A7D211E5E23E8002DF3F5 /* Main.storyboard */; };
 		8B4A7D251E5E23E8002DF3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4A7D241E5E23E8002DF3F5 /* Assets.xcassets */; };
 		8B4A7D281E5E23E8002DF3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4A7D261E5E23E8002DF3F5 /* LaunchScreen.storyboard */; };
+		8BA66CBE1E6DDAA50057A125 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BA66CBD1E6DDAA50057A125 /* Podfile */; };
+		8BA66CC01E6DDE5D0057A125 /* APIUTILS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA66CBF1E6DDE5D0057A125 /* APIUTILS.swift */; };
+		8BA66CC21E6DE3640057A125 /* APIHELPERS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA66CC11E6DE3640057A125 /* APIHELPERS.swift */; };
+		8BA66CC81E6DE4900057A125 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA66CC31E6DE4900057A125 /* Alamofire.framework */; };
+		8BA66CC91E6DE4900057A125 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA66CC41E6DE4900057A125 /* Kingfisher.framework */; };
+		8BA66CCA1E6DE4900057A125 /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA66CC51E6DE4900057A125 /* PKHUD.framework */; };
+		8BA66CCB1E6DE4900057A125 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA66CC61E6DE4900057A125 /* PromiseKit.framework */; };
+		8BA66CCC1E6DE4900057A125 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA66CC71E6DE4900057A125 /* SwiftyJSON.framework */; };
+		8BA66CCF1E6DE7C40057A125 /* BMParserNoticias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA66CCE1E6DE7C40057A125 /* BMParserNoticias.swift */; };
+		8BA66CD21E6DEA460057A125 /* BMNoticiasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA66CD11E6DEA460057A125 /* BMNoticiasModel.swift */; };
+		8BCB23301E64A9BF00E67BF8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB232F1E64A9BF00E67BF8 /* SWRevealViewController.m */; };
+		C830D61BACA8C6541EA34F14 /* Pods_App_BaresMadrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5A7185E02C8ED35D9CC799 /* Pods_App_BaresMadrid.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F5A7185E02C8ED35D9CC799 /* Pods_App_BaresMadrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_BaresMadrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEB55AB34110CA81C97B16A /* Pods-App_BaresMadrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_BaresMadrid.release.xcconfig"; path = "Pods/Target Support Files/Pods-App_BaresMadrid/Pods-App_BaresMadrid.release.xcconfig"; sourceTree = "<group>"; };
 		8B4A7D1A1E5E23E8002DF3F5 /* App_BaresMadrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_BaresMadrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4A7D1D1E5E23E8002DF3F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B4A7D1F1E5E23E8002DF3F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B4A7D1F1E5E23E8002DF3F5 /* BMPosicionActualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMPosicionActualViewController.swift; sourceTree = "<group>"; };
 		8B4A7D221E5E23E8002DF3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B4A7D241E5E23E8002DF3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B4A7D271E5E23E8002DF3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B4A7D291E5E23E8002DF3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BA66CBD1E6DDAA50057A125 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8BA66CBF1E6DDE5D0057A125 /* APIUTILS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUTILS.swift; sourceTree = "<group>"; };
+		8BA66CC11E6DE3640057A125 /* APIHELPERS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHELPERS.swift; sourceTree = "<group>"; };
+		8BA66CC31E6DE4900057A125 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../Users/cice/Library/Developer/Xcode/DerivedData/App_BaresMadrid-gowdjnzoebmvwuchsmctqrengmzi/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		8BA66CC41E6DE4900057A125 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../../../../../Users/cice/Library/Developer/Xcode/DerivedData/App_BaresMadrid-gowdjnzoebmvwuchsmctqrengmzi/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
+		8BA66CC51E6DE4900057A125 /* PKHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PKHUD.framework; path = "../../../../../../../Users/cice/Library/Developer/Xcode/DerivedData/App_BaresMadrid-gowdjnzoebmvwuchsmctqrengmzi/Build/Products/Debug-iphonesimulator/PKHUD/PKHUD.framework"; sourceTree = "<group>"; };
+		8BA66CC61E6DE4900057A125 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = "../../../../../../../Users/cice/Library/Developer/Xcode/DerivedData/App_BaresMadrid-gowdjnzoebmvwuchsmctqrengmzi/Build/Products/Debug-iphonesimulator/PromiseKit/PromiseKit.framework"; sourceTree = "<group>"; };
+		8BA66CC71E6DE4900057A125 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../../../../Users/cice/Library/Developer/Xcode/DerivedData/App_BaresMadrid-gowdjnzoebmvwuchsmctqrengmzi/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		8BA66CCE1E6DE7C40057A125 /* BMParserNoticias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMParserNoticias.swift; sourceTree = "<group>"; };
+		8BA66CD11E6DEA460057A125 /* BMNoticiasModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMNoticiasModel.swift; sourceTree = "<group>"; };
+		8BCB232D1E64A9BE00E67BF8 /* App_BaresMadrid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App_BaresMadrid-Bridging-Header.h"; sourceTree = "<group>"; };
+		8BCB232E1E64A9BF00E67BF8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		8BCB232F1E64A9BF00E67BF8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D657283E8CA57D2D8C04EC21 /* Pods-App_BaresMadrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_BaresMadrid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App_BaresMadrid/Pods-App_BaresMadrid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA66CC81E6DE4900057A125 /* Alamofire.framework in Frameworks */,
+				8BA66CC91E6DE4900057A125 /* Kingfisher.framework in Frameworks */,
+				8BA66CCA1E6DE4900057A125 /* PKHUD.framework in Frameworks */,
+				8BA66CCB1E6DE4900057A125 /* PromiseKit.framework in Frameworks */,
+				8BA66CCC1E6DE4900057A125 /* SwiftyJSON.framework in Frameworks */,
+				C830D61BACA8C6541EA34F14 /* Pods_App_BaresMadrid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		074C8254B8D9FFF93A2143B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA66CC31E6DE4900057A125 /* Alamofire.framework */,
+				8BA66CC41E6DE4900057A125 /* Kingfisher.framework */,
+				8BA66CC51E6DE4900057A125 /* PKHUD.framework */,
+				8BA66CC61E6DE4900057A125 /* PromiseKit.framework */,
+				8BA66CC71E6DE4900057A125 /* SwiftyJSON.framework */,
+				5F5A7185E02C8ED35D9CC799 /* Pods_App_BaresMadrid.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2272058A198207BA3E3154F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D657283E8CA57D2D8C04EC21 /* Pods-App_BaresMadrid.debug.xcconfig */,
+				7BEB55AB34110CA81C97B16A /* Pods-App_BaresMadrid.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8B4A7D111E5E23E8002DF3F5 = {
 			isa = PBXGroup;
 			children = (
+				8BA66CBD1E6DDAA50057A125 /* Podfile */,
 				8B4A7D1C1E5E23E8002DF3F5 /* App_BaresMadrid */,
 				8B4A7D1B1E5E23E8002DF3F5 /* Products */,
+				2272058A198207BA3E3154F5 /* Pods */,
+				074C8254B8D9FFF93A2143B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +114,52 @@
 			isa = PBXGroup;
 			children = (
 				8B4A7D1D1E5E23E8002DF3F5 /* AppDelegate.swift */,
-				8B4A7D1F1E5E23E8002DF3F5 /* ViewController.swift */,
+				8BA66CD31E6DEB0D0057A125 /* MODELS */,
+				8BA66CCD1E6DE7760057A125 /* API */,
+				8BCB23311E64AA5600E67BF8 /* OBJ -C */,
+				8B4A7D1F1E5E23E8002DF3F5 /* BMPosicionActualViewController.swift */,
 				8B4A7D211E5E23E8002DF3F5 /* Main.storyboard */,
 				8B4A7D241E5E23E8002DF3F5 /* Assets.xcassets */,
 				8B4A7D261E5E23E8002DF3F5 /* LaunchScreen.storyboard */,
 				8B4A7D291E5E23E8002DF3F5 /* Info.plist */,
 			);
 			path = App_BaresMadrid;
+			sourceTree = "<group>";
+		};
+		8BA66CCD1E6DE7760057A125 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8BA66CBF1E6DDE5D0057A125 /* APIUTILS.swift */,
+				8BA66CC11E6DE3640057A125 /* APIHELPERS.swift */,
+				8BA66CD01E6DE8DB0057A125 /* PARSERS */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		8BA66CD01E6DE8DB0057A125 /* PARSERS */ = {
+			isa = PBXGroup;
+			children = (
+				8BA66CCE1E6DE7C40057A125 /* BMParserNoticias.swift */,
+			);
+			name = PARSERS;
+			sourceTree = "<group>";
+		};
+		8BA66CD31E6DEB0D0057A125 /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+				8BA66CD11E6DEA460057A125 /* BMNoticiasModel.swift */,
+			);
+			name = MODELS;
+			sourceTree = "<group>";
+		};
+		8BCB23311E64AA5600E67BF8 /* OBJ -C */ = {
+			isa = PBXGroup;
+			children = (
+				8BCB232E1E64A9BF00E67BF8 /* SWRevealViewController.h */,
+				8BCB232F1E64A9BF00E67BF8 /* SWRevealViewController.m */,
+				8BCB232D1E64A9BE00E67BF8 /* App_BaresMadrid-Bridging-Header.h */,
+			);
+			name = "OBJ -C";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B4A7D2C1E5E23E8002DF3F5 /* Build configuration list for PBXNativeTarget "App_BaresMadrid" */;
 			buildPhases = (
+				E13710CD76F798444415097E /* [CP] Check Pods Manifest.lock */,
 				8B4A7D161E5E23E8002DF3F5 /* Sources */,
 				8B4A7D171E5E23E8002DF3F5 /* Frameworks */,
 				8B4A7D181E5E23E8002DF3F5 /* Resources */,
+				17286F23799595E1D75D4A92 /* [CP] Embed Pods Frameworks */,
+				0A1D858EE2C4A2726BF44B20 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +197,7 @@
 				TargetAttributes = {
 					8B4A7D191E5E23E8002DF3F5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,19 +227,73 @@
 			files = (
 				8B4A7D281E5E23E8002DF3F5 /* LaunchScreen.storyboard in Resources */,
 				8B4A7D251E5E23E8002DF3F5 /* Assets.xcassets in Resources */,
+				8BA66CBE1E6DDAA50057A125 /* Podfile in Resources */,
 				8B4A7D231E5E23E8002DF3F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A1D858EE2C4A2726BF44B20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App_BaresMadrid/Pods-App_BaresMadrid-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17286F23799595E1D75D4A92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App_BaresMadrid/Pods-App_BaresMadrid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E13710CD76F798444415097E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B4A7D161E5E23E8002DF3F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B4A7D201E5E23E8002DF3F5 /* ViewController.swift in Sources */,
+				8BA66CD21E6DEA460057A125 /* BMNoticiasModel.swift in Sources */,
+				8BA66CC01E6DDE5D0057A125 /* APIUTILS.swift in Sources */,
+				8B4A7D201E5E23E8002DF3F5 /* BMPosicionActualViewController.swift in Sources */,
+				8BA66CC21E6DE3640057A125 /* APIHELPERS.swift in Sources */,
+				8BA66CCF1E6DE7C40057A125 /* BMParserNoticias.swift in Sources */,
 				8B4A7D1E1E5E23E8002DF3F5 /* AppDelegate.swift in Sources */,
+				8BCB23301E64A9BF00E67BF8 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -246,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -256,24 +412,33 @@
 		};
 		8B4A7D2D1E5E23E8002DF3F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D657283E8CA57D2D8C04EC21 /* Pods-App_BaresMadrid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = App_BaresMadrid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.es.CICE.App-BaresMadrid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "App_BaresMadrid/App_BaresMadrid-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8B4A7D2E1E5E23E8002DF3F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BEB55AB34110CA81C97B16A /* Pods-App_BaresMadrid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = App_BaresMadrid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.es.CICE.App-BaresMadrid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "App_BaresMadrid/App_BaresMadrid-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -297,6 +462,7 @@
 				8B4A7D2E1E5E23E8002DF3F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -27,6 +27,10 @@
 		8BA66CDA1E6DF39A0057A125 /* BMNoticiaCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA66CD81E6DF39A0057A125 /* BMNoticiaCustomCell.xib */; };
 		8BA66CDD1E6E02540057A125 /* BMImdbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA66CDC1E6E02540057A125 /* BMImdbModel.swift */; };
 		8BCB23301E64A9BF00E67BF8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB232F1E64A9BF00E67BF8 /* SWRevealViewController.m */; };
+		8BE71D2B1E7080B500DB8312 /* BMParserOmDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE71D2A1E7080B500DB8312 /* BMParserOmDb.swift */; };
+		8BE71D2D1E70864300DB8312 /* BMOmdbTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE71D2C1E70864300DB8312 /* BMOmdbTableViewController.swift */; };
+		8BE71D301E70866600DB8312 /* BMPosterObdmCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE71D2E1E70866600DB8312 /* BMPosterObdmCustomCell.swift */; };
+		8BE71D311E70866600DB8312 /* BMPosterObdmCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BE71D2F1E70866600DB8312 /* BMPosterObdmCustomCell.xib */; };
 		C830D61BACA8C6541EA34F14 /* Pods_App_BaresMadrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5A7185E02C8ED35D9CC799 /* Pods_App_BaresMadrid.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +61,10 @@
 		8BCB232D1E64A9BE00E67BF8 /* App_BaresMadrid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App_BaresMadrid-Bridging-Header.h"; sourceTree = "<group>"; };
 		8BCB232E1E64A9BF00E67BF8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		8BCB232F1E64A9BF00E67BF8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8BE71D2A1E7080B500DB8312 /* BMParserOmDb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMParserOmDb.swift; sourceTree = "<group>"; };
+		8BE71D2C1E70864300DB8312 /* BMOmdbTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMOmdbTableViewController.swift; sourceTree = "<group>"; };
+		8BE71D2E1E70866600DB8312 /* BMPosterObdmCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMPosterObdmCustomCell.swift; sourceTree = "<group>"; };
+		8BE71D2F1E70866600DB8312 /* BMPosterObdmCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMPosterObdmCustomCell.xib; sourceTree = "<group>"; };
 		D657283E8CA57D2D8C04EC21 /* Pods-App_BaresMadrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_BaresMadrid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App_BaresMadrid/Pods-App_BaresMadrid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				8BA66CCE1E6DE7C40057A125 /* BMParserNoticias.swift */,
+				8BE71D2A1E7080B500DB8312 /* BMParserOmDb.swift */,
 			);
 			name = PARSERS;
 			sourceTree = "<group>";
@@ -165,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				8B4A7D1F1E5E23E8002DF3F5 /* BMPosicionActualViewController.swift */,
+				8BE71D321E70866A00DB8312 /* JSON_POSTERS */,
 				8BA66CDB1E6DF39F0057A125 /* JSON_NOTICIAS */,
 			);
 			name = VIEWS_CONTROLLERS;
@@ -188,6 +198,16 @@
 				8BCB232D1E64A9BE00E67BF8 /* App_BaresMadrid-Bridging-Header.h */,
 			);
 			name = "OBJ -C";
+			sourceTree = "<group>";
+		};
+		8BE71D321E70866A00DB8312 /* JSON_POSTERS */ = {
+			isa = PBXGroup;
+			children = (
+				8BE71D2C1E70864300DB8312 /* BMOmdbTableViewController.swift */,
+				8BE71D2E1E70866600DB8312 /* BMPosterObdmCustomCell.swift */,
+				8BE71D2F1E70866600DB8312 /* BMPosterObdmCustomCell.xib */,
+			);
+			name = JSON_POSTERS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE71D311E70866600DB8312 /* BMPosterObdmCustomCell.xib in Resources */,
 				8BA66CDA1E6DF39A0057A125 /* BMNoticiaCustomCell.xib in Resources */,
 				8B4A7D281E5E23E8002DF3F5 /* LaunchScreen.storyboard in Resources */,
 				8B4A7D251E5E23E8002DF3F5 /* Assets.xcassets in Resources */,
@@ -323,8 +344,11 @@
 				8BA66CC01E6DDE5D0057A125 /* APIUTILS.swift in Sources */,
 				8B4A7D201E5E23E8002DF3F5 /* BMPosicionActualViewController.swift in Sources */,
 				8BA66CC21E6DE3640057A125 /* APIHELPERS.swift in Sources */,
+				8BE71D2B1E7080B500DB8312 /* BMParserOmDb.swift in Sources */,
+				8BE71D301E70866600DB8312 /* BMPosterObdmCustomCell.swift in Sources */,
 				8BA66CCF1E6DE7C40057A125 /* BMParserNoticias.swift in Sources */,
 				8B4A7D1E1E5E23E8002DF3F5 /* AppDelegate.swift in Sources */,
+				8BE71D2D1E70864300DB8312 /* BMOmdbTableViewController.swift in Sources */,
 				8BCB23301E64A9BF00E67BF8 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

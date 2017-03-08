@@ -27,8 +27,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6V-VF-sgu">
                                 <rect key="frame" x="123" y="451" width="75" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="0sa-OD-mvY"/>
-                                    <constraint firstAttribute="height" constant="75" id="x7A-tX-UqV"/>
+                                    <constraint firstAttribute="width" constant="75" id="ZA7-e4-L0U"/>
+                                    <constraint firstAttribute="height" constant="75" id="tDO-Ny-l6S"/>
                                 </constraints>
                                 <state key="normal" image="btn_localizar_on"/>
                             </button>
@@ -38,14 +38,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="F8D-gz-IbR" firstAttribute="centerX" secondItem="K6V-VF-sgu" secondAttribute="centerX" id="2tc-8m-7Uk"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pvq-v3-K5F" secondAttribute="bottom" id="Bj9-ST-JoC"/>
-                            <constraint firstItem="Pvq-v3-K5F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QS6-rm-ySz"/>
-                            <constraint firstItem="K6V-VF-sgu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T7H-B2-xOM"/>
-                            <constraint firstItem="Pvq-v3-K5F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ZpN-t0-XLq"/>
-                            <constraint firstItem="F8D-gz-IbR" firstAttribute="centerY" secondItem="K6V-VF-sgu" secondAttribute="centerY" id="dIC-88-tr5"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K6V-VF-sgu" secondAttribute="bottom" constant="42" id="jfc-yz-NzR"/>
-                            <constraint firstAttribute="trailing" secondItem="Pvq-v3-K5F" secondAttribute="trailing" id="udn-eV-zuI"/>
+                            <constraint firstItem="K6V-VF-sgu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Yy-cQ-fgr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pvq-v3-K5F" secondAttribute="bottom" id="8MC-lb-5TB"/>
+                            <constraint firstItem="F8D-gz-IbR" firstAttribute="centerX" secondItem="K6V-VF-sgu" secondAttribute="centerX" id="Jwb-y7-Pys"/>
+                            <constraint firstItem="Pvq-v3-K5F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RdB-an-iwO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K6V-VF-sgu" secondAttribute="bottom" constant="42" id="Spn-sE-sgI"/>
+                            <constraint firstItem="Pvq-v3-K5F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VDx-wG-vDe"/>
+                            <constraint firstAttribute="trailing" secondItem="Pvq-v3-K5F" secondAttribute="trailing" id="rnQ-eR-81W"/>
+                            <constraint firstItem="F8D-gz-IbR" firstAttribute="centerY" secondItem="K6V-VF-sgu" secondAttribute="centerY" id="xVS-QA-uhf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Qc-n0-EM7">
@@ -252,8 +252,8 @@
                                                     <rect key="frame" x="16" y="19" width="38" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post del día" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWB-J5-r7r">
-                                                    <rect key="frame" x="73" y="24" width="213" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Muestra los Bares de Madrid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWB-J5-r7r">
+                                                    <rect key="frame" x="73" y="24" width="219" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -261,6 +261,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="VS3-42-5aN" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="5cJ-8q-aFG"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="RGH-Pm-o3J">
                                         <rect key="frame" x="0.0" y="240" width="320" height="70"/>
@@ -545,4 +548,7 @@
         <image name="menu" width="22" height="22"/>
         <image name="news" width="1024" height="1024"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="npa-bK-Qmp"/>
+    </inferredMetricsTieBreakers>
 </document>

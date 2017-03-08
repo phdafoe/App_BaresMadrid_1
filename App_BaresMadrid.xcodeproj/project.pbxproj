@@ -65,6 +65,7 @@
 		8BE71D2C1E70864300DB8312 /* BMOmdbTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMOmdbTableViewController.swift; sourceTree = "<group>"; };
 		8BE71D2E1E70866600DB8312 /* BMPosterObdmCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMPosterObdmCustomCell.swift; sourceTree = "<group>"; };
 		8BE71D2F1E70866600DB8312 /* BMPosterObdmCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMPosterObdmCustomCell.xib; sourceTree = "<group>"; };
+		8BE71D331E709E3F00DB8312 /* TeoriaNSCoding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TeoriaNSCoding.playground; sourceTree = "<group>"; };
 		D657283E8CA57D2D8C04EC21 /* Pods-App_BaresMadrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_BaresMadrid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App_BaresMadrid/Pods-App_BaresMadrid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				8B4A7D1D1E5E23E8002DF3F5 /* AppDelegate.swift */,
+				8BE71D331E709E3F00DB8312 /* TeoriaNSCoding.playground */,
 				8BA66CD31E6DEB0D0057A125 /* MODELS */,
 				8BA66CCD1E6DE7760057A125 /* API */,
 				8BCB23311E64AA5600E67BF8 /* OBJ -C */,

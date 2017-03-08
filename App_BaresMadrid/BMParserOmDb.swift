@@ -19,8 +19,10 @@ class BMParserOmDb: NSObject {
     ///
     /// - parameter idNumero: El idNumero corresponde al numero que puede varias entre 1 y 30, este numero hace parte de la llamada
     /// - returns: La promesa de un JSON -> implementa pods de PromiseKit  / Alamofire / SwiftyJSON
-    func getDatosOmdb(_ idNumero : String) -> Promise<JSON>{
-        let request = URLRequest(url: URL(string: CONSTANTES.CONEXIONES_URL.BASE_URL_OMDB + idNumero)!)
+    func getDatosOmdb(_ idObjeto: String, idNumero : String) -> Promise<JSON>{
+        
+        //http://www.omdbapi.com/?s=Superman&page=
+        let request = URLRequest(url: URL(string: CONSTANTES.CONEXIONES_URL.BASE_URL_OMDB + idObjeto + "&page=" + idNumero)!)
         return Alamofire.request(request).responseJSON().then { (data) -> JSON in
             self.jsonDataOmDb = JSON(data)
             print(self.jsonDataOmDb!)

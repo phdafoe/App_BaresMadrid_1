@@ -15,6 +15,7 @@ class BMOmdbTableViewController: UITableViewController {
     
     //MARK: - Variables locales
     var idPoster = ""
+    var idObjeto = "Superman"
     var arrayDatosOmdb : [BMImdbModel] = []
     var customRefresh = UIRefreshControl()
     
@@ -97,7 +98,7 @@ class BMOmdbTableViewController: UITableViewController {
         let datosOmdb = BMParserOmDb()
         HUD.show(.progress)
         firstly{
-            return when(resolved: datosOmdb.getDatosOmdb(idPoster))
+            return when(resolved: datosOmdb.getDatosOmdb(idObjeto, idNumero: idPoster))
             }.then{_ in
                 self.arrayDatosOmdb = datosOmdb.getParserOmDb()
             }.then{_ in

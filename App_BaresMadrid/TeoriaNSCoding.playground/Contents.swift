@@ -94,19 +94,18 @@ func salvarInfo(){
         NSKeyedArchiver.archiveRootObject(multitud, toFile: urlData.path)
         //print(urlData.path)
     }else{
-        print("Erro guardando datos")
+        print("Error guardando datos")
     }
 }
 
 func cargarDatos(){
-    if let urlData = dataBaseUrl(){
-        if let datosSalvados = NSKeyedUnarchiver.unarchiveObject(withFile: urlData.path) as? [Persona]{
+    if let urlData = dataBaseUrl(), let datosSalvados = NSKeyedUnarchiver.unarchiveObject(withFile: urlData.path) as? [Persona]{
             multitud = datosSalvados
         }else{
             print("Erro leyendo datos")
         }
-    }
 }
+
 
 
 //1

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0D4F881E77176F001EB4B0 /* BMBaresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D4F871E77176F001EB4B0 /* BMBaresModel.swift */; };
+		8B0D4F8B1E772D04001EB4B0 /* BmDetalleBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D4F8A1E772D04001EB4B0 /* BmDetalleBarViewController.swift */; };
 		8B4A7D1E1E5E23E8002DF3F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A7D1D1E5E23E8002DF3F5 /* AppDelegate.swift */; };
 		8B4A7D201E5E23E8002DF3F5 /* BMPosicionActualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A7D1F1E5E23E8002DF3F5 /* BMPosicionActualViewController.swift */; };
 		8B4A7D231E5E23E8002DF3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4A7D211E5E23E8002DF3F5 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		5F5A7185E02C8ED35D9CC799 /* Pods_App_BaresMadrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_BaresMadrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEB55AB34110CA81C97B16A /* Pods-App_BaresMadrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_BaresMadrid.release.xcconfig"; path = "Pods/Target Support Files/Pods-App_BaresMadrid/Pods-App_BaresMadrid.release.xcconfig"; sourceTree = "<group>"; };
+		8B0D4F871E77176F001EB4B0 /* BMBaresModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMBaresModel.swift; sourceTree = "<group>"; };
+		8B0D4F8A1E772D04001EB4B0 /* BmDetalleBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BmDetalleBarViewController.swift; sourceTree = "<group>"; };
 		8B4A7D1A1E5E23E8002DF3F5 /* App_BaresMadrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_BaresMadrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4A7D1D1E5E23E8002DF3F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B4A7D1F1E5E23E8002DF3F5 /* BMPosicionActualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMPosicionActualViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8B0D4F891E772CD5001EB4B0 /* VIEW_CONTROLLER_BM */ = {
+			isa = PBXGroup;
+			children = (
+				8B4A7D1F1E5E23E8002DF3F5 /* BMPosicionActualViewController.swift */,
+				8B0D4F8A1E772D04001EB4B0 /* BmDetalleBarViewController.swift */,
+			);
+			name = VIEW_CONTROLLER_BM;
+			sourceTree = "<group>";
+		};
 		8B4A7D111E5E23E8002DF3F5 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +181,7 @@
 			children = (
 				8BA66CD11E6DEA460057A125 /* BMNoticiasModel.swift */,
 				8BA66CDC1E6E02540057A125 /* BMImdbModel.swift */,
+				8B0D4F871E77176F001EB4B0 /* BMBaresModel.swift */,
 			);
 			name = MODELS;
 			sourceTree = "<group>";
@@ -175,7 +189,7 @@
 		8BA66CD41E6DF32D0057A125 /* VIEWS_CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
-				8B4A7D1F1E5E23E8002DF3F5 /* BMPosicionActualViewController.swift */,
+				8B0D4F891E772CD5001EB4B0 /* VIEW_CONTROLLER_BM */,
 				8BE71D321E70866A00DB8312 /* JSON_POSTERS */,
 				8BA66CDB1E6DF39F0057A125 /* JSON_NOTICIAS */,
 			);
@@ -342,7 +356,9 @@
 				8BA66CDD1E6E02540057A125 /* BMImdbModel.swift in Sources */,
 				8BA66CD61E6DF36F0057A125 /* BMListaNoticiasTableViewController.swift in Sources */,
 				8BA66CD91E6DF39A0057A125 /* BMNoticiaCustomCell.swift in Sources */,
+				8B0D4F8B1E772D04001EB4B0 /* BmDetalleBarViewController.swift in Sources */,
 				8BA66CD21E6DEA460057A125 /* BMNoticiasModel.swift in Sources */,
+				8B0D4F881E77176F001EB4B0 /* BMBaresModel.swift in Sources */,
 				8BA66CC01E6DDE5D0057A125 /* APIUTILS.swift in Sources */,
 				8B4A7D201E5E23E8002DF3F5 /* BMPosicionActualViewController.swift in Sources */,
 				8BA66CC21E6DE3640057A125 /* APIHELPERS.swift in Sources */,

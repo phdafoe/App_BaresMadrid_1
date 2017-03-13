@@ -4,6 +4,12 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>La Aplicación Bares de Madrid necesita siempre saber en donde estás</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>La Aplicación Bares de Madrid necesita saber en donde estás</string>
+	<key>NSLocationUsageDescription</key>
+	<string>La Aplicación Bares de Madrid necesita saber en donde estás</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -29,6 +35,8 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

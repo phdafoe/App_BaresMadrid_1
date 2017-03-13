@@ -102,6 +102,24 @@ class BMPosicionActualViewController: UIViewController {
         }
     }
     
+    //MARK: - SEGUES
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tagBaresMadrid"{
+            let navController = segue.destination as! UINavigationController
+            let detalleVC = navController.topViewController as! BmDetalleBarViewController
+            detalleVC.detalleBarMadrid = baresMadrid
+            detalleVC.bmDelegate = self
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }//TODO: - Fin de la clase
 
 extension BMPosicionActualViewController : CLLocationManagerDelegate{
@@ -166,9 +184,14 @@ extension BMPosicionActualViewController : CLLocationManagerDelegate{
         return lineaUno + "\n" + lineaDos + "\n" + lineaTres
     }
     
+}
+
+//MARK: - Detalle DELEGATE
+extension BMPosicionActualViewController : BmDetalleBarViewControllerDelegate{
     
-    
-    
+    func bmBaresEtiquetados(_ detalleVC: BmDetalleBarViewController, barEtiquetado: BMBaresModel) {
+        //Code
+    }
 }
 
 

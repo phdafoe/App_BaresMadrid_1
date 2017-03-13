@@ -55,7 +55,7 @@
                         <barButtonItem key="leftBarButtonItem" image="menu" id="RYh-5e-bHM"/>
                         <barButtonItem key="rightBarButtonItem" title="Añadir" id="Ieb-zE-H0F">
                             <connections>
-                                <segue destination="V4d-Nx-kSq" kind="modal" id="eBb-DY-95t"/>
+                                <segue destination="V4d-Nx-kSq" kind="modal" identifier="tagBaresMadrid" id="eBb-DY-95t"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="180" y="-577"/>
         </scene>
-        <!--View Controller-->
+        <!--Bm Detalle Bar View Controller-->
         <scene sceneID="UbL-bM-uBG">
             <objects>
-                <viewController id="8Rb-2Z-LDK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetalleBarViewController" id="8Rb-2Z-LDK" customClass="BmDetalleBarViewController" customModule="App_BaresMadrid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ip6-jY-gdb"/>
                         <viewControllerLayoutGuide type="bottom" id="n7L-Gn-vYu"/>
@@ -180,9 +180,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="h0V-3p-q6r">
-                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="Beh-WN-Aff"/>
-                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="481-Zb-H4C"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="Beh-WN-Aff">
+                            <connections>
+                                <action selector="cerraVC:" destination="8Rb-2Z-LDK" id="FCX-TN-pyj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Salvar" id="481-Zb-H4C">
+                            <connections>
+                                <action selector="salvarFotografiaBar:" destination="8Rb-2Z-LDK" id="bBc-st-t7H"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="myDireccionLBL" destination="KqK-zN-BbQ" id="fUs-rM-r6M"/>
+                        <outlet property="myImageViewPicker" destination="QDc-aq-6Vl" id="Lmi-8d-pu3"/>
+                        <outlet property="myLatitudLBL" destination="RH5-TQ-fZx" id="hzW-ae-hNN"/>
+                        <outlet property="myLongitudLBL" destination="N5u-FY-4qN" id="cDH-6g-i6V"/>
+                        <outlet property="mySalvarDatosBTN" destination="481-Zb-H4C" id="iYi-Si-Lin"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iy3-0Z-F2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

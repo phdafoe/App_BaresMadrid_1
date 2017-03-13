@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class BMBaresModel: NSObject {
     
@@ -24,3 +25,26 @@ class BMBaresModel: NSObject {
     }
     
 }
+
+//MARK: - MKAnnotation
+extension BMBaresModel : MKAnnotation{
+    var coordinate: CLLocationCoordinate2D {
+        get{
+            return CLLocationCoordinate2D(latitude: latitudBares!, longitude: longitudBares!)
+        }
+    }
+    var title: String? {
+        get{
+            return "Bar de Madrid"
+        }
+    }
+    var subtitle: String? {
+        get{
+            return direccionBares?.replacingOccurrences(of: "\n", with: "")
+        }
+    }
+}
+
+
+
+

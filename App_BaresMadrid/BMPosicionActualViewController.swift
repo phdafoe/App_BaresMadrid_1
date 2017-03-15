@@ -15,6 +15,10 @@ class BMPosicionActualViewController: UIViewController {
     //MARK: - Variables locales
     var baresMadrid : BMBaresModel?
     let locationManager = CLLocationManager()
+    var calloutImagenSeleccionada : UIImage?
+    
+    
+    
     var actualizandoLocalizacion = false{
         didSet{
             if actualizandoLocalizacion{
@@ -50,6 +54,8 @@ class BMPosicionActualViewController: UIViewController {
     //MARK: - LIFE VC
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        
         
         //FASE 1 -> SINGLETON
         APIManagerData.shared.cargarDatos()
@@ -72,6 +78,13 @@ class BMPosicionActualViewController: UIViewController {
         }
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //DELEGADO DEL MAPA
+        myMapView.delegate = self
+        myMapView.addAnnotations(APIManagerData.shared.baresMadrid)
     }
 
     override func didReceiveMemoryWarning() {
@@ -114,12 +127,13 @@ class BMPosicionActualViewController: UIViewController {
             detalleVC.detalleBarMadrid = baresMadrid
             detalleVC.bmDelegate = self
         }
+        
+        if segue.identifier == "showPinImage"{
+            let navVC = segue.destination as! UINavigationController
+            let detalleImVC = navVC.topViewController as! BMImagenDetalleViewController
+            detalleImVC.calloutIm = calloutImagenSeleccionada
+        }
     }
-    
-    
-    
-    
-    
     
     
     
@@ -198,6 +212,74 @@ extension BMPosicionActualViewController : BmDetalleBarViewControllerDelegate{
         APIManagerData.shared.baresMadrid.append(barEtiquetado)
         APIManagerData.shared.salvarDatos()
     }
+}
+
+//MARK: - MKMAPVIEWDELEGATE
+extension BMPosicionActualViewController : MKMapViewDelegate{
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        //1
+        if annotation is MKUserLocation{
+            return nil
+        }
+        
+        //2 - pasa algo parecido a las celdas de las tablas / se reaprovechan
+        var annotationView = myMapView.dequeueReusableAnnotationView(withIdentifier: "barPin")
+        
+        if annotationView == nil{
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "barPin")
+        }else{
+            annotationView?.annotation = annotation
+        }
+        
+        //3 - Vamos a configurar la anotacion
+        if let place = annotation as? BMBaresModel{
+            //hacemos referencia a las diferentes piezas de nuestro objeto
+            let imageName = place.imagenBares
+            //debemos comprobar la imagen
+            if let imagenUrl = APIManagerData.shared.imagenUrl(){
+                do{
+                    let imageData = try Data(contentsOf: imagenUrl.appendingPathComponent(imageName!))
+                    self.calloutImagenSeleccionada = UIImage(data: imageData)
+                    let myImageFromDDBB = resizeImage(calloutImagenSeleccionada!, newWidth: 40.0)
+                    let btnImageView = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+                    btnImageView.setImage(myImageFromDDBB, for: .normal)
+                    annotationView?.leftCalloutAccessoryView = btnImageView
+                    annotationView?.image = #imageLiteral(resourceName: "img_pin")
+                    annotationView?.canShowCallout = true
+                }catch let error{
+                    print("Error en la configuracionde la imagen: \(error.localizedDescription)")
+                }
+            }
+        }
+        return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
+        if control == view.leftCalloutAccessoryView{
+            performSegue(withIdentifier: "showPinImage", sender: view)
+        }
+    }
+    
+    
+    
+    
+    //MATK: - Util
+    func resizeImage(_ imagen : UIImage, newWidth : CGFloat) -> UIImage{
+        let scale = newWidth / imagen.size.width
+        let newHeigth = imagen.size.height * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeigth))
+        imagen.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeigth))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!
+    }
+    
+    
+    
+    
 }
 
 

@@ -9,6 +9,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Imagen Detalle View Controller-->
+        <scene sceneID="bWD-md-bhU">
+            <objects>
+                <viewController storyboardIdentifier="ImagenDetalleViewController" id="lpG-yZ-WTh" customClass="BMImagenDetalleViewController" customModule="App_BaresMadrid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Ir-AD-pna"/>
+                        <viewControllerLayoutGuide type="bottom" id="cW1-zw-iUe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zaR-Wu-YtZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c4d-8A-Fch">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c4d-8A-Fch" firstAttribute="leading" secondItem="zaR-Wu-YtZ" secondAttribute="leading" id="W9H-wn-Fda"/>
+                            <constraint firstItem="cW1-zw-iUe" firstAttribute="top" secondItem="c4d-8A-Fch" secondAttribute="bottom" id="q0m-4g-z6y"/>
+                            <constraint firstAttribute="trailing" secondItem="c4d-8A-Fch" secondAttribute="trailing" id="wbq-RZ-Ixt"/>
+                            <constraint firstItem="c4d-8A-Fch" firstAttribute="top" secondItem="9Ir-AD-pna" secondAttribute="bottom" id="zp5-g3-E1s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ijp-iy-Ou9">
+                        <barButtonItem key="leftBarButtonItem" title="Cerrar" id="yEC-b6-ncz">
+                            <connections>
+                                <action selector="hideVC:" destination="lpG-yZ-WTh" id="IPo-dZ-Iq2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myImageBarMadrid" destination="c4d-8A-Fch" id="J4Z-aU-gvW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVe-hC-wFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.25" y="-1309.8591549295775"/>
+        </scene>
         <!--Posicion Actual View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -65,6 +104,7 @@
                         <outlet property="myActivityInd" destination="F8D-gz-IbR" id="DJu-7v-Klv"/>
                         <outlet property="myAddBTN" destination="Ieb-zE-H0F" id="aGa-gV-jwZ"/>
                         <outlet property="myMapView" destination="Pvq-v3-K5F" id="jjQ-rs-aQa"/>
+                        <segue destination="eNR-av-x0M" kind="presentation" identifier="showPinImage" id="VKJ-qv-96y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -558,6 +598,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqG-Be-cjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="180" y="912"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FgT-H0-aBo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eNR-av-x0M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="osP-5S-a6x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lpG-yZ-WTh" kind="relationship" relationship="rootViewController" id="8nS-Cd-ic3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJM-rI-Hio" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="-1309"/>
         </scene>
     </scenes>
     <resources>

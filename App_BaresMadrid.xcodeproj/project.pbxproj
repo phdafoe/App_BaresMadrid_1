@@ -10,6 +10,7 @@
 		8B0D4F881E77176F001EB4B0 /* BMBaresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D4F871E77176F001EB4B0 /* BMBaresModel.swift */; };
 		8B0D4F8B1E772D04001EB4B0 /* BmDetalleBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D4F8A1E772D04001EB4B0 /* BmDetalleBarViewController.swift */; };
 		8B35F07F1E79C11F00D26868 /* APIManagerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35F07E1E79C11F00D26868 /* APIManagerData.swift */; };
+		8B35F0811E79DDDC00D26868 /* BMImagenDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35F0801E79DDDC00D26868 /* BMImagenDetalleViewController.swift */; };
 		8B4A7D1E1E5E23E8002DF3F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A7D1D1E5E23E8002DF3F5 /* AppDelegate.swift */; };
 		8B4A7D201E5E23E8002DF3F5 /* BMPosicionActualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A7D1F1E5E23E8002DF3F5 /* BMPosicionActualViewController.swift */; };
 		8B4A7D231E5E23E8002DF3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4A7D211E5E23E8002DF3F5 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		8B0D4F871E77176F001EB4B0 /* BMBaresModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMBaresModel.swift; sourceTree = "<group>"; };
 		8B0D4F8A1E772D04001EB4B0 /* BmDetalleBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BmDetalleBarViewController.swift; sourceTree = "<group>"; };
 		8B35F07E1E79C11F00D26868 /* APIManagerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManagerData.swift; sourceTree = "<group>"; };
+		8B35F0801E79DDDC00D26868 /* BMImagenDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMImagenDetalleViewController.swift; sourceTree = "<group>"; };
 		8B4A7D1A1E5E23E8002DF3F5 /* App_BaresMadrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_BaresMadrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4A7D1D1E5E23E8002DF3F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B4A7D1F1E5E23E8002DF3F5 /* BMPosicionActualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMPosicionActualViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				8B4A7D1F1E5E23E8002DF3F5 /* BMPosicionActualViewController.swift */,
 				8B0D4F8A1E772D04001EB4B0 /* BmDetalleBarViewController.swift */,
+				8B35F0801E79DDDC00D26868 /* BMImagenDetalleViewController.swift */,
 			);
 			name = VIEW_CONTROLLER_BM;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				8BA66CD21E6DEA460057A125 /* BMNoticiasModel.swift in Sources */,
 				8B0D4F881E77176F001EB4B0 /* BMBaresModel.swift in Sources */,
 				8BA66CC01E6DDE5D0057A125 /* APIUTILS.swift in Sources */,
+				8B35F0811E79DDDC00D26868 /* BMImagenDetalleViewController.swift in Sources */,
 				8B4A7D201E5E23E8002DF3F5 /* BMPosicionActualViewController.swift in Sources */,
 				8BA66CC21E6DE3640057A125 /* APIHELPERS.swift in Sources */,
 				8BE71D2B1E7080B500DB8312 /* BMParserOmDb.swift in Sources */,

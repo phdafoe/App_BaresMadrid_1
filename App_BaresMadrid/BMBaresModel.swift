@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class BMBaresModel: NSObject {
+class BMBaresModel: NSObject, NSCoding {
     
     var direccionBares : String?
     var latitudBares : Double?
@@ -23,6 +23,28 @@ class BMBaresModel: NSObject {
         self.imagenBares = pImagenBares
         super.init()
     }
+    
+    required convenience init?(coder aDecoder: NSCoder) {
+        let direccionBaresaD = aDecoder.decodeObject(forKey: "direccionKey") as! String
+        let latitudBaresaD = aDecoder.decodeObject(forKey: "latitudKey") as! Double
+        let longitudBaresaD = aDecoder.decodeObject(forKey: "longitudKey") as! Double
+        let imagenBaresaD = aDecoder.decodeObject(forKey: "imagenKey") as! String
+        
+        self.init(pDireccionBares : direccionBaresaD,
+                  pLatitudBares : latitudBaresaD,
+                  pLongitudBares : longitudBaresaD,
+                  pImagenBares : imagenBaresaD)
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(direccionBares, forKey: "direccionKey")
+        aCoder.encode(latitudBares, forKey: "latitudKey")
+        aCoder.encode(longitudBares, forKey: "longitudKey")
+        aCoder.encode(imagenBares, forKey: "imagenKey")
+    }
+    
+    
+    
     
 }
 

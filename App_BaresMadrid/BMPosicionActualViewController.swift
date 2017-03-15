@@ -27,6 +27,7 @@ class BMPosicionActualViewController: UIViewController {
                 self.myActivityInd.isHidden = true
                 self.myActivityInd.stopAnimating()
                 self.buscarmapa.isUserInteractionEnabled = true
+                self.myAddBTN.isEnabled = false
             }
         }
     }
@@ -49,6 +50,9 @@ class BMPosicionActualViewController: UIViewController {
     //MARK: - LIFE VC
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //FASE 1 -> SINGLETON
+        APIManagerData.shared.cargarDatos()
         
         actualizandoLocalizacion = false
         
@@ -82,7 +86,7 @@ class BMPosicionActualViewController: UIViewController {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         case .denied, .restricted:
-            present(muestraAlertVC("Localización desacativada",
+            present(muestraAlertVC("Localización desactivada",
                                    messageData: "Porfavor, activa la localización para esta aplicacion en los ajustes del dispositivo",
                                    titleActionData: "OK"),
                     animated: true,
@@ -190,7 +194,9 @@ extension BMPosicionActualViewController : CLLocationManagerDelegate{
 extension BMPosicionActualViewController : BmDetalleBarViewControllerDelegate{
     
     func bmBaresEtiquetados(_ detalleVC: BmDetalleBarViewController, barEtiquetado: BMBaresModel) {
-        //Code
+        //FASE 2 -> SINGLETON
+        APIManagerData.shared.baresMadrid.append(barEtiquetado)
+        APIManagerData.shared.salvarDatos()
     }
 }
 

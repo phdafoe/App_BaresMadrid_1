@@ -55,11 +55,6 @@ class BMPosicionActualViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        
-        
-        //FASE 1 -> SINGLETON
-        APIManagerData.shared.cargarDatos()
-        
         actualizandoLocalizacion = false
         
         //TODO: - Titulo de la Barra de navegacion
@@ -82,10 +77,16 @@ class BMPosicionActualViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        //FASE 1 -> SINGLETON
+        APIManagerData.shared.cargarDatos()
+        
         //DELEGADO DEL MAPA
         myMapView.delegate = self
         myMapView.addAnnotations(APIManagerData.shared.baresMadrid)
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -140,6 +141,8 @@ class BMPosicionActualViewController: UIViewController {
     
 }//TODO: - Fin de la clase
 
+
+//MARK: - Core Location Delegate
 extension BMPosicionActualViewController : CLLocationManagerDelegate{
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -263,10 +266,9 @@ extension BMPosicionActualViewController : MKMapViewDelegate{
         }
     }
     
+
     
-    
-    
-    //MATK: - Util
+    //MARK: - Util
     func resizeImage(_ imagen : UIImage, newWidth : CGFloat) -> UIImage{
         let scale = newWidth / imagen.size.width
         let newHeigth = imagen.size.height * scale
@@ -276,27 +278,5 @@ extension BMPosicionActualViewController : MKMapViewDelegate{
         UIGraphicsEndImageContext()
         return newImage!
     }
-    
-    
-    
-    
+       
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

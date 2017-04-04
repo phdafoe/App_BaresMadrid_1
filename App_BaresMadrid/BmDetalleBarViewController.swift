@@ -41,13 +41,15 @@ class BmDetalleBarViewController: UIViewController {
         //FASE 3 -> Singleton
         if let imagenDes = myImageViewPicker.image{
             //random de nombre de la imagen
-            let randomNameImage = UUID().uuidString.appending(".png")
-            //Aqui obtenemos la ruta url y "ademas" la imagen
-            if let customUrl = APIManagerData.shared.imagenUrl()?.appendingPathComponent(randomNameImage), let imageData = UIImagePNGRepresentation(imagenDes){
-                do{
-                    try imageData.write(to: customUrl)
-                }catch let error{
-                    print("Error salvando datos: \(error.localizedDescription)")
+            let randomNameImage = UUID().uuidString.appending(".jpg")
+            //Aqui obtenemos la ruta url y le agregamos el componente de ruta de acceso y "ademas" la imagen
+            if let customUrl = APIManagerData.shared.imagenUrl()?.appendingPathComponent(randomNameImage){
+                if let imageData = UIImageJPEGRepresentation(imagenDes, 0.3){
+                    do{
+                        try imageData.write(to: customUrl)
+                    }catch let error{
+                        print("Error salvando datos: \(error.localizedDescription)")
+                    }
                 }
             }
             //Creamos el objeto

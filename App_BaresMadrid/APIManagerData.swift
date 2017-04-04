@@ -28,8 +28,10 @@ class APIManagerData: NSObject {
     
     //MARK: - CARGAR DATOS
     func cargarDatos(){
-        if let customUrl = dataBaseUrl(), let datosSalvados = NSKeyedUnarchiver.unarchiveObject(withFile: customUrl.path) as? [BMBaresModel]{
-                baresMadrid = datosSalvados
+        if let customUrl = dataBaseUrl(){
+            if let datosSalvados = NSKeyedUnarchiver.unarchiveObject(withFile: customUrl.path) as? [BMBaresModel]{
+        baresMadrid = datosSalvados
+            }
         }else{
             print("Error cargando datos")
         }
